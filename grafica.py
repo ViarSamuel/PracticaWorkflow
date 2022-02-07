@@ -11,7 +11,7 @@ data = pandas.read_csv('/home/usuario/Escritorio/Estadística/Primeraparte/Prác
 
 
 
-data = players_stats[players_stats['Height'].notna()]
+data = data[data['Height'].notna()]
 height = data["Height"]
 from statistics import mean
 mean(height)
